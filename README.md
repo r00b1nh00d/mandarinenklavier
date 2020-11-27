@@ -2,13 +2,13 @@
 ## ~avatar avatar @unplugged
 Du hast bereits gelernt den Calliope Musikstücke abspielen zu lassen. 
 Du kannst mit dem Calliope aber auch selbst musizieren und ihn in eine Art kleines Klavier umbauen.<br>
-![MandarinenKlavier](https://github.com/r00b1nh00d/mandarinenklavier/blob/master/mandarine2.gif?raw=true)
+![MandarinenKlavier](https://github.com/r00b1nh00d/mandarinenklavier/blob/master/mandarine2.gif?raw=true) <br>
 **Hinweis** immer wen sich die LED-Farbe ändert kommt ein unterschiedlicher Ton.
 
 ## ~ @unplugged einfache Version
 Beginnen wir erstmal mit einer einfachen Version. <br>
 Hier hast du aber leider nur vier Tasten zur verfügung. 
-![MandarinenKlavier](https://github.com/r00b1nh00d/mandarinenklavier/blob/master/mandarine1.gif?raw=true)
+![MandarinenKlavier](https://github.com/r00b1nh00d/mandarinenklavier/blob/master/Mandarine1.gif?raw=true) <br>
 **Hinweis** immer wen sich die LED-Farbe ändert kommt ein unterschiedlicher Ton.
 
 
