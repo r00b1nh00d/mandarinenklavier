@@ -104,3 +104,6 @@ basic.forever(function () {
 })
 
 ```
+## ~@unplugged
+Dein Klavier hat immer noch nicht genug Tasten? <br>
+Du kannst die Pins P0, P1 und P3 zusätzlich noch nutzen wie in der einfachen Variante. Musst für diese aber wieder den Minuspol berühren!
