@@ -7,7 +7,7 @@ Du kannst mit dem Calliope aber auch selbst musizieren und ihn in eine Art klein
 
 ## ~ @unplugged einfache Version
 Beginnen wir erstmal mit einer einfachen Version. <br>
-Hier hast du aber leider nur vier Tasten zur verfügung. 
+Hier hast du aber leider nur vier Tasten zur verfügung. <br>
 ![MandarinenKlavier](https://github.com/r00b1nh00d/mandarinenklavier/blob/master/Mandarine1.gif?raw=true) <br>
 **Hinweis** immer wen sich die LED-Farbe ändert kommt ein unterschiedlicher Ton.
 
