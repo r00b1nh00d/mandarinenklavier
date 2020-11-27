@@ -2,34 +2,64 @@
 ## ~avatar avatar @unplugged
 gedulde dich noch ein wenig bis es soweit ist :-)
 
+## einfache Version
+```blocks
+input.onPinPressed(TouchPin.P0, function () {
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    basic.setLedColor(0xffff00)
+})
+input.onPinPressed(TouchPin.P3, function () {
+    basic.setLedColor(0xff0000)
+    music.playTone(294, music.beat(BeatFraction.Whole))
+})
+input.onPinPressed(TouchPin.P2, function () {
+    basic.setLedColor(0x00ff00)
+    music.playTone(294, music.beat(BeatFraction.Whole))
+})
+input.onPinPressed(TouchPin.P1, function () {
+    basic.setLedColor(0x007fff)
+    music.playTone(294, music.beat(BeatFraction.Whole))
+})
+led.enable(false)
+```
 
-> Diese Seite bei [https://r00b1nh00d.github.io/mandarinenklavier/](https://r00b1nh00d.github.io/mandarinenklavier/) öffnen
+## komplexere Version
+```blocks
+input.onButtonPressed(Button.A, function () {
+    serial.writeLine("")
+    serial.writeLine("" + (pins.analogReadPin(AnalogPin.P2)))
+    serial.writeLine("" + (pins.analogReadPin(AnalogPin.C4)))
+    serial.writeLine("" + (pins.analogReadPin(AnalogPin.C5)))
+    serial.writeLine("" + (pins.analogReadPin(AnalogPin.C6)))
+    serial.writeLine("" + (pins.analogReadPin(AnalogPin.C16)))
+    serial.writeLine("" + (pins.analogReadPin(AnalogPin.C17)))
+})
+led.enable(false)
+basic.forever(function () {
+    if (pins.analogReadPin(AnalogPin.P1) > 400) {
+        basic.setLedColor(0xff0000)
+        music.playTone(262, music.beat(BeatFraction.Whole))
+    } else if (pins.analogReadPin(AnalogPin.P2) > 400) {
+        basic.setLedColor(0xffff00)
+        music.playTone(294, music.beat(BeatFraction.Whole))
+    } else if (pins.analogReadPin(AnalogPin.C4) > 400) {
+        basic.setLedColor(0x00ff00)
+        music.playTone(294, music.beat(BeatFraction.Whole))
+    } else if (pins.analogReadPin(AnalogPin.C5) > 300) {
+        basic.setLedColor(0x007fff)
+        music.playTone(330, music.beat(BeatFraction.Whole))
+    } else if (pins.analogReadPin(AnalogPin.C6) > 250) {
+        basic.setLedColor(0xff8000)
+        music.playTone(330, music.beat(BeatFraction.Whole))
+    } else if (pins.analogReadPin(AnalogPin.C16) > 250) {
+        basic.setLedColor(0x7f00ff)
+        music.playTone(349, music.beat(BeatFraction.Whole))
+    } else if (pins.analogReadPin(AnalogPin.C17) > 250) {
+        basic.setLedColor(0xff9da5)
+        music.playTone(392, music.beat(BeatFraction.Whole))
+    } else {
+        basic.setLedColor(0x000000)
+    }
+})
 
-## Als Erweiterung verwenden
-
-Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
-
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Neues Projekt**
-* klicke auf **Erweiterungen** unter dem Zahnrad-Menü
-* nach **https://github.com/r00b1nh00d/mandarinenklavier** suchen und importieren
-
-## Dieses Projekt bearbeiten ![Build Status Abzeichen](https://github.com/r00b1nh00d/mandarinenklavier/workflows/MakeCode/badge.svg)
-
-Um dieses Repository in MakeCode zu bearbeiten.
-
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Importieren** und dann auf **Importiere URL**
-* füge **https://github.com/r00b1nh00d/mandarinenklavier** ein und klicke auf Importieren
-
-## Blockvorschau
-
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
-
-![Eine gerenderte Ansicht der Blöcke](https://github.com/r00b1nh00d/mandarinenklavier/raw/master/.github/makecode/blocks.png)
-
-#### Metadaten (verwendet für Suche, Rendering)
-
-* for PXT/calliopemini
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+```
