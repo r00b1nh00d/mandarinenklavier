@@ -64,7 +64,7 @@ input.onButtonPressed(Button.A, function () {
 ## ~ @unplugged
 Um dir die Werte am Computer ausgeben zu lassen brauchst du ein Programm wie [putty](https://www.putty.org/). <br>
 ![puttyNutzen](https://github.com/r00b1nh00d/mandarinenklavier/blob/master/Puttynutzen.png?raw=true) <br>
-Öffne das Programm Putty. Dort muss du zuerst "Serial" auswählen. Anschließend musst du im Gerätemanager schauen an welchem COM-Anschluss dein Calliope angeschlossen ist. Bei mir war es der Port COM4. Den Gerätemanager erreichst du z.B. mit rechtsklick auf das Windows-Symbol unten links im Bild. Als übertragungsgeschwindigkeit musst du für den Calliope noch die 115220 einstellen. Nachdem du bei putty auf Open geklickt hast öffnet sich ein Fenster mit schwarzem Hintergrund. Dort sollten dir jetzt nach einem Drücken der Taste "A" die Werte angezeigt werden.
+Öffne das Programm Putty. Dort musst du zuerst "Serial" auswählen. Anschließend musst du im Gerätemanager schauen an welchem COM-Anschluss dein Calliope angeschlossen ist. Bei mir war es der Port COM4. Den Gerätemanager erreichst du z.B. mit rechtsklick auf das Windows-Symbol (unten links im Bild). Als übertragungsgeschwindigkeit musst du für den Calliope noch die 115220 einstellen. Nachdem du bei putty auf Open geklickt hast öffnet sich ein Fenster mit schwarzem Hintergrund. Dort sollten dir jetzt nach einem Drücken der Taste "A" die Werte angezeigt werden.
 
 ## ~ @unplugged
 Jetzt kannst du Mandarinenstücke oder andere Dinge über Jumperkabel mit den Pins am Calliope verbinden.
